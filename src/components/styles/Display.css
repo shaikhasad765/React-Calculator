@@ -1,0 +1,96 @@
+/* CSS styles for the ".display" class, which represents the display area of the calculator */
+.display {
+    /* Using flexbox to arrange the content in a column layout */
+    display: flex;
+    flex-direction: column;
+    
+    /* Adding padding around the display area and extra padding at the bottom */
+    padding: 10px;
+    padding-bottom: 20px;
+    
+    /* Applying a linear gradient background from left (#2089f5) to right (#0244ac) */
+    background-image: linear-gradient(to right, #2089f5, #0244ac);
+    
+    /* Adding rounded corners to the display area */
+    border-radius: 20px;
+}
+
+/* Media query for screen widths greater than or equal to 800px */
+@media (min-width: 800px) {
+    /* Styles for ".display" when the screen width is greater than or equal to 800px */
+    /* Adding rounded corners to the top-left and top-right corners of the display area */
+    .display {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+}
+
+/* Styles for elements with the ".expression" class */
+.expression {
+    /* Adding padding and margin at the bottom of the expression area */
+    padding: 5px;
+    margin-bottom: 10px;
+    
+    /* Setting the height of the expression area to 50px */
+    height: 50px;
+}
+
+/* Styles for elements with the ".input" and ".value" classes */
+.input,
+.value {
+    /* Adding padding around the input and value elements */
+    padding: 10px;
+    
+    /* Aligning the text inside the input and value elements to the right */
+    text-align: right;
+    
+    /* Making the background color transparent and setting the text color to white */
+    background-color: transparent;
+    color: white;
+    
+    /* Removing the border around the input and value elements */
+    border: 0px;
+    
+    /* Adding some letter spacing to the text */
+    letter-spacing: 1.5px;
+}
+
+/* Styles for elements with the ".input" class */
+.input {
+    /* Setting the font size of the input element to 35px */
+    font-size: 35px;
+}
+
+/* Styles for elements with the ".value" class */
+.value {
+    /* Setting the font size of the value element to 15px */
+    font-size: 15px;
+}
+
+/* Styles for the placeholder text inside the input and value elements */
+.input::placeholder,
+.value::placeholder {
+    /* Setting the color of the placeholder text to white */
+    color: white;
+}
+
+/* Styles for elements with the ".input" and ".value" classes when focused and visible */
+.input:focus-visible,
+.value:focus-visible {
+    /* Removing the default outline style when the input or value element is focused */
+    outline-style: none;
+    
+    /* Setting the outline width to 0px to hide the outline when focused */
+    outline-width: 0px;
+}
+
+/* Styles for the calculator heading */
+.calculator-heading {
+    /* Using flexbox to align the content and justify it to the left */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    /* Setting the text color to white */
+    color: white;
+}

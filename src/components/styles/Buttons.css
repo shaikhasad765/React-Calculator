@@ -1,0 +1,139 @@
+/* CSS styles for the ".show-btn" class, which represents a container for buttons */
+.show-btn {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Media query for screen widths greater than or equal to 800px */
+@media (min-width: 800px) {
+    /* Styles for ".show-btn" when the screen width is greater than or equal to 800px */
+    .show-btn {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+
+/* Styles for the ".equal" class, which represents the equal sign button */
+.equal {
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+/* Styles for the last child of the ".btn" class, which represents the last button in the container */
+.btn:last-child {
+    font-weight: medium;
+    font-size: 40px;
+    width: 110px;
+    height: 50px;
+    border-radius: 20px;
+    color: white;
+    background-color: #aaa19cc0;
+}
+
+/* Styles for images inside ".btn" class */
+.btn img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Styles for buttons with the ".clr" class, which represent the clear button */
+.clr {
+    color: #dd1b2b;
+}
+
+/* Styles for buttons with the ".exp" class, which represent the expression buttons */
+.exp {
+    background-color: #aaa19cc0 !important;
+    color: #000;
+    font-size: 1.6rem !important;
+}
+
+/* Additional styles for specific expression buttons */
+
+.expplus {
+    background-color: #2675e2 !important;
+    color: #ffffff;
+    font-size: 1.6rem !important;
+}
+
+.expminus {
+    background-color: #20bf55 !important;
+    color: #ffffff;
+    font-size: 1.6rem !important;
+}
+
+.expmultiply {
+    background-color: #b55064 !important;
+    color: #ffffff;
+    font-size: 1.6rem !important;
+}
+
+.expdivide {
+    background-color: #ebd56c !important;
+    color: #ffffff;
+    font-size: 1.6rem !important;
+}
+
+.expequal {
+    background-color: #c5b565 !important;
+    color: #ffffff;
+    font-size: 1.6rem !important;
+}
+
+/* Common styles for buttons with the ".btn" class */
+.btn {
+    width: 60px;
+    height: 60px;
+    margin: 6px auto;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30%;
+    background: none;
+    border: 0px;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media query for screen widths greater than or equal to 800px */
+@media (min-width: 800px) {
+    /* Styles for ".btn" on hover when the screen width is greater than or equal to 800px */
+    .btn:hover {
+        background-color: #edededc9;
+        color: black;
+        transform: scale(1.1);
+        transition: background-color 0.3s ease;
+    }
+
+    /* Styles for ".btn" when active (clicked) or being touched when the screen width is greater than or equal to 800px */
+    .btn:active,
+    .btn.touched {
+        background-color: #2089f5;
+        color: white;
+        transition: background-color 0.3s ease;
+        border-radius: 30%;
+    }
+
+    /* Styles for ".btn" when active (clicked) when the screen width is greater than or equal to 800px */
+    .btn:active {
+        transform: scale(0.9);
+    }
+
+    /* Styles for ".btn" when touched (clicked) when the screen width is greater than or equal to 800px */
+    .btn.touched {
+        pointer-events: none;
+    }
+}
+
+/* Media query for screen widths less than 800px */
+@media (max-width: 800px) {
+    /* Styles for ".btn" when active (clicked) when the screen width is less than 800px */
+    .btn:active {
+        transform: scale(0.9);
+    }
+}

@@ -1,13 +1,19 @@
+/* The following CSS code sets up the default styles for the entire page */
+
+/* Resetting margin to 0 for the <body> element to remove any default spacing */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  /* Setting up font families for different operating systems and fallbacks */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  
+  /* Enabling font smoothing for better text rendering on Apple devices */
   -webkit-font-smoothing: antialiased;
+  /* Enabling font smoothing for better text rendering on Mozilla Firefox */
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Setting the font family for <code> elements */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  /* Specifying font families in order of preference and providing fallback options */
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

@@ -1,0 +1,56 @@
+/* CSS styles for the ".container" class, which represents the main container of the page */
+.container {
+    /* Setting a background image for the container using a relative URL */
+    background: url(../../images/bg.jpg) no-repeat;
+    
+    /* Ensuring the container takes at least the full viewport height and width */
+    min-height: 100vh;
+    min-width: 100%;
+    
+    /* Using flexbox to vertically and horizontally center the content within the container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Positioning the background image at the center of the container */
+    background-position: center;
+    
+    /* Scaling the background image to cover the entire container */
+    background-size: cover;
+    
+    /* Applying an animation to the background image called "animateBg" */
+    /* The animation will run for 5 seconds in a linear manner and will repeat infinitely */
+    animation: animateBg 5s linear infinite;
+}
+
+/* CSS styles for the ".main" class, which represents the main content area of the page */
+.main {
+    /* Setting the border to 0px and adding a subtle box shadow around the main content area */
+    border: 0px;
+    box-shadow: 0px 0px 3px 0.5px #c4e0e5;
+    
+    /* Adding rounded corners to the main content area */
+    border-radius: 20px;
+    
+    /* Setting the maximum width of the main content area to 500px by default */
+    max-width: 500px;
+}
+
+/* Media query for screen widths greater than or equal to 800px */
+@media (min-width: 800px) {
+    /* Styles for ".main" when the screen width is greater than or equal to 800px */
+    /* Reducing the maximum width of the main content area to 400px */
+    .main {
+        max-width: 400px;
+    }
+}
+
+/* Media query for screen widths less than or equal to 600px */
+@media (max-width: 600px) {
+    /* Styles for ".main" when the screen width is less than or equal to 600px */
+    /* Setting the width and height of the main content area to 100% to fill the entire viewport */
+    .main {
+        width: 100%;
+        height: 100%;
+    }
+}
