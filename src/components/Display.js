@@ -13,7 +13,7 @@ const Display = ({ input, setInput, answer }) => {
         const newValue = e.target.value;
 
         // Remove any consecutive arithmetic operators to avoid invalid inputs
-        const cleanedValue = newValue.replace(/[-+*/x÷]{2,}/g, (match) => match[1]);
+        const cleanedValue = newValue.replace(/[-%+*/x÷]{2,}/g, (match) => match[1]);
 
         // Check if the cleanedValue is valid or an empty string
         if (cleanedValue === "" || re.test(cleanedValue)) {
