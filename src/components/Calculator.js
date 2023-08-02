@@ -20,7 +20,7 @@ function Calculator() {
         let val = event.target.innerText;
 
         // Regular expression to match valid arithmetic operators
-        const isOperator = /[+\-*/^x÷]/;
+        const isOperator = /[+\-*/^x÷%]/;
 
         // Check if the new input and the last input are both operators
         const lastChar = input.charAt(input.length - 1);
